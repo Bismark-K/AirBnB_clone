@@ -6,3 +6,10 @@ This repository holds my project to build a clone of the AirBnB website
 | Tasks | Files | Description |
 | _____ | _____ | ___________ |
 |Authors|[Authors] (https://github.com/devbismarkkwaku/AirBnB_clone/AUTHORS)| Authors of the project | 
+
+<br>
+<br>
+
+<center> <h2> Usage </h2> </center>
+
+1. First clone this repository
