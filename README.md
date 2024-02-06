@@ -5,7 +5,6 @@ This repository holds my project to build a clone of the AirBnB website
 ---
 
 <center> <h2> Contents </h2> </center>
-## Contents
 
 | Tasks | Files | Description |
 | ----- | ----- | ----------- |
