@@ -8,7 +8,7 @@ This repository holds my project to build a clone of the AirBnB website
 
 | Tasks | Files | Description |
 | ----- | ----- | ----------- |
-|Authors|[Authors](https://github.com/devbismarkkwaku/AirBnB_clone/AUTHORS)| Authors of the project | 
+|Authors|[Authors](https://github.com/devbismarkkwaku/AirBnB_clone/blob/main/AUTHORS)| Authors of the project | 
 
 <br>
 <br>
