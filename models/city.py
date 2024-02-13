@@ -2,6 +2,7 @@
 """ Module for handling the class: city."""
 from models.basemodel import BaseModel
 
+
 class City(BaseModel):
     """Attributes
 
@@ -11,4 +12,3 @@ class City(BaseModel):
 
     id_state: str = ""
     name: str = ""
-

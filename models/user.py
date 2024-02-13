@@ -3,6 +3,7 @@
 """User class model, inherits from BaseModel."""
 from models.base_model import BaseModel
 
+
 class User(BaseModel):
     """User with parent class being BaseModel
 
