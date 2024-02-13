@@ -7,8 +7,8 @@ import uuid
 class BaseModel:
     """Base Model Class."""
     id = str(uuid.uuid4())
-    time_created = datetime.now()
-    time_modified = datetime.now()
+    created_at = datetime.now()
+    updated_at = datetime.now()
 
     def __str__(self):
         """Returns the class's representation."""
@@ -16,8 +16,8 @@ class BaseModel:
 
 
     def store(self):
-        """Modifies the time_modified with the current time."""
-        self.time_modified = datetime.now()
+        """Modifies the updated_at with the current time."""
+        self.updated_at = datetime.now()
 
 
     def dictionary(self):
@@ -25,6 +25,6 @@ class BaseModel:
         dict_object = self.__dict__.copy()
 
         dict_object['__class__'] = self.__class__.__name__
-        dict_object['time_created'] = self.time_created.isoformat()
-        dict_object['time_modified'] = self.time_modified.isoformat()
+        dict_object['created_at'] = self.created_at.isoformat()
+        dict_object['updated_at'] = self.updated_at.isoformat()
         return dict_object
