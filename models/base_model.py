@@ -23,7 +23,7 @@ class BaseModel:
                 kwargs['updated_at'] = datetime.strptime(
                         kwargs['updated_at'], '%Y-%m-%dT%H:%M:%S.%f')
 
-            for key, value in kwargs.item():
+            for key, value in kwargs.items():
                 setattr(self, key, value)
 
         else:
