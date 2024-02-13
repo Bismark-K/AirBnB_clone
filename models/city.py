@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Module for handling the class: city."""
-from models.basemodel import BaseModel
+from models.base_model import BaseModel
 
 
 class City(BaseModel):

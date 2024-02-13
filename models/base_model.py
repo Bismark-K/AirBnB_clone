@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module for the Base Class."""
 
+from models import storage
 from datetime import datetime
 import uuid
 
@@ -30,6 +31,7 @@ class BaseModel:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+            storage.new(self)
 
     def __str__(self):
         """Returns the class's representation."""
@@ -39,6 +41,7 @@ class BaseModel:
     def save(self):
         """Modifies the updated_at with the current time."""
         self.updated_at = datetime.now()
+        storage.save()
 
     def to_dict(self):
         """Returns a dictionary of __dict__."""
