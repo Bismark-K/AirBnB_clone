@@ -27,12 +27,18 @@ class FileStorage:
         from models.user import User
         from models.base_model import BaseModel
         from models.city import City
+        from models.review import Review
+        from models.amenity import Amenity
+        from models.state import State
 
         class_map = {
                 'BaseModel': BaseModel,
                 'User': User,
                 'City': City,
-                'Place': Place
+                'Place': Place,
+                'Review': Review,
+                'Amenity': Amenity,
+                'State': State
                 }
 
         try:
