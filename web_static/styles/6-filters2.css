@@ -31,41 +31,37 @@
 	line-height: 20px;
 }
 
+
+/* Common styles */
 .popover {
-	visibility: hidden;
-	list-style-type: none;
-	display: none;
-	position: absolute;
-	background-color: #FAFAFA;
-	width: 100%;
-
-	margin-left: -1px;
-	margin-top: 8px;
-	padding: 25px 0px;
-
-	border: 1px solid #DDDDDD;
-	border-radius: 4px;
+  display: none; /* Initially hide the popover */
+  position: absolute;
+  background-color: #FAFAFA;
+  width: 200px; /* Adjust width as needed */
+  padding: 25px 0px;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  left: 0;
+  top: calc(100% + 5px); /* Adjust popover positioning */
 }
 
-.locations:hover .popover {
-	visibility: visible;
-	display: inline-block;
+.locations:hover .popover, .amenities:hover .popover {
+  display: block; /* Show the popover when hovering over the respective filter */
 }
 
-.amenities:hover .popover {
-	display: inline-block;
-	visibility: visible;
-}
+/* Rest of your CSS styles */
 
 .filters .locations ul {
+	overflow: hidden;
+	visibility: hidden;
 	list-style-type: none;
 	padding: 6px 0px 6px 0px;
 }
 
 .filters .locations li {
-	margin: 0 0 0 0;
+	margin: 0 auto 12px 0;
 }
-	
+
 
 .filters .locations h2 {
 	font-size: 16px;
@@ -76,7 +72,7 @@
 .locations h3, .amenities h3 {
 	font-weight: 600;
 	margin-top: 12px;
-	margin-bottom: 5px;	
+	margin-bottom: 5px;
 	padding-left: 45px;
 }
 
@@ -91,7 +87,7 @@ h4 {
 button {
 	color: #FFFFFF;
 	font-size: 18px;
-	
+
 	height: 48px;
 	width: 20%;
 	background-color: #FF5A5F;
